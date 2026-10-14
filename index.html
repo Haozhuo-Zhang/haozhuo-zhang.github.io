@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/site.css?v=3">
+  <link rel="stylesheet" href="./assets/site.css?v=5">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSZZ3RE93M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -200,8 +200,24 @@
     </section>
   </main>
 
+  <section class="globe-section" aria-labelledby="globe-title">
+    <div class="globe-inner">
+      <div class="globe-copy">
+        <h2 class="section-label" id="globe-title">Visitors</h2>
+        <p>Each red point is a city where this site, or a project page it links to, was opened.</p>
+        <p class="globe-stat" id="globe-stat">Gathering the map…</p>
+        <p class="globe-hint">Drag to turn.</p>
+      </div>
+      <div class="globe-stage">
+        <canvas id="visitor-globe" aria-label="Globe of cities that opened this site"></canvas>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>Haozhuo Zhang · Department of Computer Science, The University of Manchester</p>
   </footer>
+  <script src="./assets/visit.js?v=1" defer></script>
+  <script type="module" src="./assets/globe.js?v=2"></script>
 </body>
 </html>

@@ -106,7 +106,6 @@
     var visits = places.reduce(function (sum, place) { return sum + place.n; }, 0);
     var text = count === 1 ? "1 city" : count + " cities";
     if (visits !== count) text += " · " + (visits === 1 ? "1 visit" : visits + " visits");
-    if (state.latest && state.latest.label) text += " · latest in " + state.latest.label;
     el.textContent = text;
   }
 
